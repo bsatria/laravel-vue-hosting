@@ -31,7 +31,7 @@
             <div class="col-lg-6 pb-3 pt-3">
                 <img
                     class="w-100"
-                    src="/assets/images/image_support.png"
+                    src="/assets/images/Image_support.png"
                     alt="Image Support"
                 />
             </div>
