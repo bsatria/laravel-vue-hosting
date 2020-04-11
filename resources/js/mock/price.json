@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Bayi",
+            "price": "19.000",
+            "discount_price": "14.000",
+            "pengguna": "938",
+            "button_text": "Pilih Sekarang",
+            "active": false
+        },
+        {
+            "id": 2,
+            "title": "Pelajar",
+            "price": "2.000",
+            "discount_price": "4.168",
+            "pengguna": "14.000",
+            "button_text": "Pilih Sekarang",
+            "active": false
+        },
+        {
+            "id": 3,
+            "title": "Personal",
+            "price": "19.000",
+            "discount_price": "10.017",
+            "pengguna": "15.000",
+            "button_text": "Pilih Sekarang",
+            "active": true
+        },
+        {
+            "id": 4,
+            "title": "Bisnis",
+            "price": "25.000",
+            "discount_price": "3.552",
+            "pengguna": "17.000",
+            "button_text": "Diskon 40%",
+            "active": false
+        }
+    ]
+}

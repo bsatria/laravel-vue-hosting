@@ -1,0 +1,230 @@
+// Header
+.navbar_subnav {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    .navbar_subnav-item-icon {
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        margin: 0 10px;
+    }
+    ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin: unset;
+        li {
+            margin-left: 10px;
+        }
+    }
+}
+.navbar_nav {
+    .navbar-logo {
+        img {
+            width: 200px;
+        }
+    }
+    .navbar_nav-item {
+        &:last-child {
+            margin-right: 0;
+        }
+        margin: 0 5px;
+    }
+    .navbar_nav-link {
+        color: $gray-dark !important;
+    }
+}
+
+.title_banner {
+    font-family: "Montserrat";
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.title_banner_sub {
+    font-size: 30px;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    color: rgb(90, 90, 90);
+}
+
+.title_item {
+    margin: 5px 0;
+}
+
+// Feature
+.feature-img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    img {
+        width: 45%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 28%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+// Package
+
+.package {
+    .package-title {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .package-price-trough {
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+    .package-price {
+        font-size: 18px;
+        .huge-price {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+    .active {
+        color: white;
+        background-color: #028fee;
+    }
+    .active-user {
+        color: white;
+        background-color: #027fde;
+    }
+    .active-border {
+        border: solid 1px #027fde;
+    }
+}
+
+// Included
+
+.title-included {
+    font-family: "Montserrat";
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+// Support Laravel
+
+.laravel {
+    .title_laravel {
+        font-size: 20px;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        color: rgb(90, 90, 90);
+    }
+
+    .title_note {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+}
+
+// Support and Share
+
+.count {
+    width: 50px;
+}
+
+// Footer
+
+@media (min-width: 576px) {
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.footer {
+    font-size: 14px;
+    padding: 100px 5% 24px;
+    background: #333;
+    color: #c4c4c4;
+    .footer__privacy-policy > * {
+        font-size: 12px;
+        color: #fff;
+        transition: color 0.8s;
+        a,
+        a:hover {
+            text-decoration: none;
+            outline: none;
+            color: #3a4166;
+        }
+    }
+    .footer__copyright {
+        font-size: 12px;
+        color: #fff;
+    }
+    .footer__social-icon-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer__column-title {
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .footer__menu-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .footer__menu {
+            color: #fff;
+            transition: color 0.8s;
+        }
+        a,
+        a:hover {
+            text-decoration: none;
+            outline: none;
+            color: #3a4166;
+        }
+    }
+    .footer__contact {
+        line-height: 2.02em;
+        color: #fff;
+        a {
+            color: #fff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
+    .footer__newsletter {
+        .button__news {
+            top: 0.5px;
+            right: 0;
+        }
+    }
+}
+
+// Utils
+
+@mixin prevent-border($name, $mg) {
+    .prevent-border-#{$name} {
+        #{$mg}: -1px;
+    }
+    .prevent-border-#{$name} {
+        #{$mg}: -1px;
+    }
+    .prevent-border-#{$name} {
+        #{$mg}: -1px;
+    }
+    .prevent-border-#{$name} {
+        #{$mg}: -1px;
+    }
+}
+
+@include prevent-border("top", margin-top);
+@include prevent-border("left", margin-left);
+@include prevent-border("bottom", margin-bottom);
+@include prevent-border("right", margin-right);
